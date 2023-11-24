@@ -1,5 +1,6 @@
 import streamlit
 import pandas
+import requests
 
 streamlit.title('My New Healthy Dinner')
 streamlit.header(' 🥣 Break Menu')
@@ -20,7 +21,7 @@ streamlit.dataframe(fruits_to_show)
 
 streamlit.header('Fruity Vice Fruit advice')
 
-import requests
+
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 streamlit.text(fruityvice_response)
 
